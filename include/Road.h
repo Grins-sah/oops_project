@@ -1,15 +1,16 @@
-#include<Location.h>
-#include<iostream>
-#include<string>
+#pragma once
+
+#include "Location.h"
+#include <string>
 using namespace std;
-class Road{
-private:
+
+class Road {
+public:
     Location* from;
     Location* to;
     double distance;
-    bool isBlocked;
+
 public:
-    Road(Location* from ,Location* to , double dist, bool isBlock);
-    friend class Graph;
-    double getDist() const;
+    Road(Location* from, Location* to, double distance);
+    double getDist();
 };

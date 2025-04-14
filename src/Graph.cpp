@@ -13,4 +13,5 @@ vector<pair<Location*,Road*>> Graph::getNeighbours(string x)  {
     for(auto ele : graph){
         if(ele.first->getName()==x) return ele.second;
     }
+    return {}; // Return an empty vector if no match is found
 }

@@ -3,5 +3,5 @@
 using namespace std;
 class BFSRoute : public RouteStratergy{
 public:
-    vector<string> findRoute(Graph* g,Location* from ,Location* to) override;
+    vector<Road*> findRoute(Graph* g,Location* from ,Location* to) override;
 };
