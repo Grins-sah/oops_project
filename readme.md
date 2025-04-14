@@ -31,7 +31,8 @@ It features modular design, shortest path algorithms, and extendable architectur
 ## 🛠️ Setup Instructions
 
 ```bash
-g++ -std=c++17 main.cpp -o navigator
+C:\msys64\ucrt64\bin\g++.exe -fdiagnostics-color=always -g -Iinclude main.cpp src/*.cpp -o main.exe
+main.exe
 ./navigator
 
 ```
